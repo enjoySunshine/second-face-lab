@@ -1,4 +1,4 @@
-import { DefaultShaper } from './DefaultShaper';
+import { DefaultShaper } from './DefaultShaper.js';
 
 const SHAPERS = new Map();
 registerShaper(DefaultShaper);

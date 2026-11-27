@@ -1,5 +1,5 @@
 import { getCombiningClass } from 'unicode-properties';
-import { DefaultShaper } from './DefaultShaper';
+import { DefaultShaper } from './DefaultShaper.js';
 
 /**
  * Hebrew shaper, ported from HarfBuzz's hb-ot-shaper-hebrew.cc.

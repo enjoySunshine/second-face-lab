@@ -1,10 +1,10 @@
-import KernProcessor from './KernProcessor';
-import UnicodeLayoutEngine from './UnicodeLayoutEngine';
-import GlyphRun from './GlyphRun';
-import GlyphPosition from './GlyphPosition';
-import * as Script from './Script';
-import AATLayoutEngine from '../aat/AATLayoutEngine';
-import OTLayoutEngine from '../opentype/OTLayoutEngine';
+import KernProcessor from './KernProcessor.js';
+import UnicodeLayoutEngine from './UnicodeLayoutEngine.js';
+import GlyphRun from './GlyphRun.js';
+import GlyphPosition from './GlyphPosition.js';
+import * as Script from './Script.js';
+import AATLayoutEngine from '../aat/AATLayoutEngine.js';
+import OTLayoutEngine from '../opentype/OTLayoutEngine.js';
 
 export default class LayoutEngine {
   constructor(font) {

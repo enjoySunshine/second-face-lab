@@ -1,4 +1,4 @@
-import { create } from './core';
+import { create } from './core.js';
 import fs from 'fs';
 
 export function openSync(filename, postscriptName) {

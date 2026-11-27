@@ -1,9 +1,9 @@
-import { DefaultShaper } from './DefaultShaper';
+import { DefaultShaper } from './DefaultShaper.js';
 import { StateMachine } from 'dfa';
 import { UnicodeTrie } from 'unicode-trie';
 import { getCategory } from 'unicode-properties';
-import * as Script from '../../layout/Script';
-import GlyphInfo from '../GlyphInfo';
+import * as Script from '../../layout/Script.js';
+import GlyphInfo from '../GlyphInfo.js';
 import indicMachine from './generated/indic.js';
 import indicTrieBase64 from './generated/indic.trie.base64.js';
 import useData from './generated/use.js';
@@ -15,8 +15,8 @@ import {
   HALANT_OR_COENG_FLAGS,
   INDIC_CONFIGS,
   INDIC_DECOMPOSITIONS,
-} from './indic-data';
-import { decodeBase64 } from '../../utils';
+} from './indic-data.js';
+import { decodeBase64 } from '../../utils.js';
 
 const { decompositions } = useData;
 const trie = new UnicodeTrie(decodeBase64(indicTrieBase64));

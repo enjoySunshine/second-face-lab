@@ -1,16 +1,16 @@
-import { registerFormat, registerShaper } from './core';
-import { TTFFont } from './TTFFont';
-import { WOFFFont } from './WOFFFont';
-import { WOFF2Font } from './WOFF2Font';
-import { TrueTypeCollection } from './TrueTypeCollection';
-import { DFont } from './DFont';
-import { UniversalShaper } from './opentype/shapers/UniversalShaper';
-import { ArabicShaper } from './opentype/shapers/ArabicShaper';
-import { IndicShaper } from './opentype/shapers/IndicShaper';
-import { HangulShaper } from './opentype/shapers/HangulShaper';
-import { HebrewShaper } from './opentype/shapers/HebrewShaper';
-import { MyanmarShaper } from './opentype/shapers/MyanmarShaper';
-import { ThaiShaper } from './opentype/shapers/ThaiShaper';
+import { registerFormat, registerShaper } from './core.js';
+import { TTFFont } from './TTFFont.js';
+import { WOFFFont } from './WOFFFont.js';
+import { WOFF2Font } from './WOFF2Font.js';
+import { TrueTypeCollection } from './TrueTypeCollection.js';
+import { DFont } from './DFont.js';
+import { UniversalShaper } from './opentype/shapers/UniversalShaper.js';
+import { ArabicShaper } from './opentype/shapers/ArabicShaper.js';
+import { IndicShaper } from './opentype/shapers/IndicShaper.js';
+import { HangulShaper } from './opentype/shapers/HangulShaper.js';
+import { HebrewShaper } from './opentype/shapers/HebrewShaper.js';
+import { MyanmarShaper } from './opentype/shapers/MyanmarShaper.js';
+import { ThaiShaper } from './opentype/shapers/ThaiShaper.js';
 
 // Register font formats
 registerFormat(TTFFont);
@@ -28,4 +28,4 @@ registerShaper(HebrewShaper);
 registerShaper(MyanmarShaper);
 registerShaper(ThaiShaper);
 
-export * from './core';
+export * from './core.js';

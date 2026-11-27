@@ -1,5 +1,5 @@
 import * as r from 'restructure';
-import { ItemVariationStore } from './variations';
+import { ItemVariationStore } from './variations.js';
 
 let ValueRecord = new r.Struct({
   valueTag: new r.String(4),

@@ -1,5 +1,5 @@
-import { DefaultShaper } from './DefaultShaper';
-import GlyphInfo from '../GlyphInfo';
+import { DefaultShaper } from './DefaultShaper.js';
+import GlyphInfo from '../GlyphInfo.js';
 
 /**
  * Thai / Lao shaper, ported from HarfBuzz's hb-ot-shaper-thai.cc.

@@ -6,8 +6,8 @@ import {
   Coverage,
   ClassDef,
   Device,
-} from './opentype';
-import { GPOSLookup } from './GPOS';
+} from './opentype.js';
+import { GPOSLookup } from './GPOS.js';
 
 let JstfGSUBModList = new r.Array(r.uint16, r.uint16);
 

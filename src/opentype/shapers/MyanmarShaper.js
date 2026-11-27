@@ -1,7 +1,7 @@
-import { DefaultShaper } from './DefaultShaper';
+import { DefaultShaper } from './DefaultShaper.js';
 import { StateMachine } from 'dfa';
-import GlyphInfo from '../GlyphInfo';
-import { CATEGORIES } from './myanmar-data';
+import GlyphInfo from '../GlyphInfo.js';
+import { CATEGORIES } from './myanmar-data.js';
 import myanmarMachine from './generated/myanmar.js';
 
 /**

@@ -1,6 +1,6 @@
-import Subset from './Subset';
-import Directory from '../tables/directory';
-import TTFGlyphEncoder from '../glyph/TTFGlyphEncoder';
+import Subset from './Subset.js';
+import Directory from '../tables/directory.js';
+import TTFGlyphEncoder from '../glyph/TTFGlyphEncoder.js';
 
 export default class TTFSubset extends Subset {
   constructor(font) {

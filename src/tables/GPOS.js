@@ -8,8 +8,8 @@ import {
   Device,
   Context,
   ChainingContext,
-} from './opentype';
-import { FeatureVariations } from './variations';
+} from './opentype.js';
+import { FeatureVariations } from './variations.js';
 
 let ValueFormat = new r.Bitfield(r.uint16, [
   'xPlacement',

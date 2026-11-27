@@ -1,8 +1,9 @@
 import * as r from 'restructure';
-import { TTFFont } from './TTFFont';
-import Directory from './tables/directory';
-import tables from './tables';
-import { asciiDecoder } from './utils';
+import { TTFFont } from './TTFFont.js';
+import Directory from './tables/directory.js';
+import tables from './tables/index.js';
+import { asciiDecoder } from './utils.js';
+import { selectFace } from './faceSelection.js';
 
 let TTCHeader = new r.VersionedStruct(r.uint32, {
   0x00010000: {
@@ -35,21 +36,7 @@ export class TrueTypeCollection {
   }
 
   getFont(name) {
-    for (let offset of this.header.offsets) {
-      let stream = new r.DecodeStream(this.stream.buffer);
-      stream.pos = offset;
-      let font = new TTFFont(stream);
-      if (
-        font.postscriptName === name ||
-        (font.postscriptName instanceof Uint8Array &&
-          name instanceof Uint8Array &&
-          font.postscriptName.every((v, i) => name[i] === v))
-      ) {
-        return font;
-      }
-    }
-
-    return null;
+    return selectFace(this.fonts, name);
   }
 
   get fonts() {

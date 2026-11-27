@@ -1,5 +1,5 @@
-import GlyphIterator from './GlyphIterator';
-import * as Script from '../layout/Script';
+import GlyphIterator from './GlyphIterator.js';
+import * as Script from '../layout/Script.js';
 
 const DEFAULT_SCRIPTS = ['DFLT', 'dflt', 'latn'];
 

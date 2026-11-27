@@ -1,4 +1,4 @@
-import CFFOperand from './CFFOperand';
+import CFFOperand from './CFFOperand.js';
 import { PropertyDescriptor } from 'restructure';
 
 // CFF defaults are primitives or flat arrays of numbers and strings.

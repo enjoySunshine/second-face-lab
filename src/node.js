@@ -1,2 +1,2 @@
-export * from './index';
-export * from './fs';
+export * from './index.js';
+export * from './fs.js';

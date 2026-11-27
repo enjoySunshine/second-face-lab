@@ -1,7 +1,7 @@
-import { binarySearch } from './utils';
-import { getEncoding, getEncodingMapping } from './encodings';
-import { cache } from './cache';
-import { range } from './utils';
+import { binarySearch } from './utils.js';
+import { getEncoding, getEncodingMapping } from './encodings.js';
+import { cache } from './cache.js';
+import { range } from './utils.js';
 
 export default class CmapProcessor {
   constructor(cmapTable) {

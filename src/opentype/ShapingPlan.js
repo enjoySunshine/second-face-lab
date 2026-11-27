@@ -1,4 +1,4 @@
-import * as Script from '../layout/Script';
+import * as Script from '../layout/Script.js';
 
 /**
  * ShapingPlans are used by the OpenType shapers to store which

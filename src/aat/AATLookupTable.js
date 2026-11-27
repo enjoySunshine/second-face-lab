@@ -1,5 +1,5 @@
-import { cache } from '../cache';
-import { range } from '../utils';
+import { cache } from '../cache.js';
+import { range } from '../utils.js';
 
 export default class AATLookupTable {
   constructor(table) {

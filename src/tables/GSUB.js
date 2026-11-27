@@ -8,8 +8,8 @@ import {
   Device,
   Context,
   ChainingContext,
-} from './opentype';
-import { FeatureVariations } from './variations';
+} from './opentype.js';
+import { FeatureVariations } from './variations.js';
 
 let Sequence = new r.Array(r.uint16, r.uint16);
 let AlternateSet = Sequence;

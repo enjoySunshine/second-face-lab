@@ -1,6 +1,6 @@
-import Glyph from './Glyph';
-import Path from './Path';
-import BBox from './BBox';
+import Glyph from './Glyph.js';
+import Path from './Path.js';
+import BBox from './BBox.js';
 import * as r from 'restructure';
 
 // The header for both simple and composite glyphs

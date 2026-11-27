@@ -1,6 +1,6 @@
-import AATStateMachine from './AATStateMachine';
-import AATLookupTable from './AATLookupTable';
-import { cache } from '../cache';
+import AATStateMachine from './AATStateMachine.js';
+import AATLookupTable from './AATLookupTable.js';
+import { cache } from '../cache.js';
 
 // indic replacement flags
 const MARK_FIRST = 0x8000;

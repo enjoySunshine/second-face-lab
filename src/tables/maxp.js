@@ -1,5 +1,5 @@
 import * as r from 'restructure';
-import { version16Dot16 } from '../utils';
+import { version16Dot16 } from '../utils.js';
 
 // maxiumum profile
 export default new r.Struct({

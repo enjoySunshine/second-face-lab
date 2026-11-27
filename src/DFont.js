@@ -1,5 +1,6 @@
 import * as r from 'restructure';
-import { TTFFont } from './TTFFont';
+import { TTFFont } from './TTFFont.js';
+import { selectFace } from './faceSelection.js';
 
 let DFontName = new r.String(r.uint8);
 let DFontData = new r.Struct({
@@ -85,25 +86,7 @@ export class DFont {
   }
 
   getFont(name) {
-    if (!this.sfnt) {
-      return null;
-    }
-
-    for (let ref of this.sfnt.refList) {
-      let pos = this.header.dataOffset + ref.dataOffset + 4;
-      let stream = new r.DecodeStream(this.stream.buffer.slice(pos));
-      let font = new TTFFont(stream);
-      if (
-        font.postscriptName === name ||
-        (font.postscriptName instanceof Uint8Array &&
-          name instanceof Uint8Array &&
-          font.postscriptName.every((v, i) => name[i] === v))
-      ) {
-        return font;
-      }
-    }
-
-    return null;
+    return this.sfnt ? selectFace(this.fonts, name) : null;
   }
 
   get fonts() {

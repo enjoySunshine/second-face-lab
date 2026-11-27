@@ -1,7 +1,7 @@
-import Subset from './Subset';
-import CFFTop from '../cff/CFFTop';
-import CFFPrivateDict from '../cff/CFFPrivateDict';
-import standardStrings from '../cff/CFFStandardStrings';
+import Subset from './Subset.js';
+import CFFTop from '../cff/CFFTop.js';
+import CFFPrivateDict from '../cff/CFFPrivateDict.js';
+import standardStrings from '../cff/CFFStandardStrings.js';
 
 export default class CFFSubset extends Subset {
   constructor(font) {

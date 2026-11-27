@@ -1,5 +1,5 @@
 import * as r from 'restructure';
-import { version16Dot16 } from '../utils';
+import { version16Dot16 } from '../utils.js';
 
 // PostScript information
 export default new r.VersionedStruct(version16Dot16, {

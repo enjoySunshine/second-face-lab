@@ -1,6 +1,6 @@
 import { DecodeStream } from 'restructure';
 
-export { registerShaper } from './opentype/shapers';
+export { registerShaper } from './opentype/shapers/index.js';
 
 export let logErrors = false;
 

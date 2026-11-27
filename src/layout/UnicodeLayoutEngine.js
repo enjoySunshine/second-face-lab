@@ -1,5 +1,5 @@
 import { getCombiningClass } from 'unicode-properties';
-import BBox from '../glyph/BBox';
+import BBox from '../glyph/BBox.js';
 
 /**
  * This class is used when GPOS does not define 'mark' or 'mkmk' features

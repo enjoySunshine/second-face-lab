@@ -513,7 +513,12 @@ export interface CPALTable {
 
 export interface FontCollection {
   type: 'TTC' | 'DFont';
-  getFont(name: string): Font | null;
+  /**
+   * Returns the face with the given PostScript name, subfamily or full name
+   * (such as "Bold Italic"), or style ("regular", "italic", "bold").
+   * With no name, returns the regular face.
+   */
+  getFont(name?: string): Font | null;
   fonts: Font[];
 }
 

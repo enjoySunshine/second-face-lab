@@ -6,8 +6,8 @@ import {
   Coverage,
   ClassDef,
   Device,
-} from './opentype';
-import { ItemVariationStore } from './variations';
+} from './opentype.js';
+import { ItemVariationStore } from './variations.js';
 
 let AttachPoint = new r.Array(r.uint16, r.uint16);
 let AttachList = new r.Struct({

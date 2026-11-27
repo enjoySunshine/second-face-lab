@@ -1,5 +1,5 @@
 import { getCombiningClass, isDigit, isMark } from 'unicode-properties';
-import GlyphInfo from '../GlyphInfo';
+import GlyphInfo from '../GlyphInfo.js';
 
 const VARIATION_FEATURES = ['rvrn'];
 const COMMON_FEATURES = ['ccmp', 'locl', 'rlig', 'mark', 'mkmk'];

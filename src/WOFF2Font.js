@@ -1,10 +1,10 @@
 import * as r from 'restructure';
 import { brotliDecompressSync } from '#compression';
-import { TTFFont } from './TTFFont';
-import TTFGlyph, { Point } from './glyph/TTFGlyph';
-import WOFF2Glyph from './glyph/WOFF2Glyph';
-import WOFF2Directory from './tables/WOFF2Directory';
-import { asciiDecoder } from './utils';
+import { TTFFont } from './TTFFont.js';
+import TTFGlyph, { Point } from './glyph/TTFGlyph.js';
+import WOFF2Glyph from './glyph/WOFF2Glyph.js';
+import WOFF2Directory from './tables/WOFF2Directory.js';
+import { asciiDecoder } from './utils.js';
 
 /**
  * Subclass of TTFFont that represents a TTF/OTF font compressed by WOFF2

@@ -1,8 +1,8 @@
 import * as r from 'restructure';
-import CFFIndex from './CFFIndex';
-import CFFTop from './CFFTop';
-import CFFPrivateDict from './CFFPrivateDict';
-import standardStrings from './CFFStandardStrings';
+import CFFIndex from './CFFIndex.js';
+import CFFTop from './CFFTop.js';
+import CFFPrivateDict from './CFFPrivateDict.js';
+import standardStrings from './CFFStandardStrings.js';
 
 class CFFFont {
   constructor(stream) {

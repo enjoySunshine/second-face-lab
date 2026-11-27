@@ -1,5 +1,5 @@
-import OTProcessor from './OTProcessor';
-import GlyphInfo from './GlyphInfo';
+import OTProcessor from './OTProcessor.js';
+import GlyphInfo from './GlyphInfo.js';
 
 // Limit on the length of a glyph run, as in HarfBuzz, so that malicious
 // fonts can't grow it without bound with multiple substitutions.

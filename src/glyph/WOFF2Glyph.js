@@ -1,5 +1,5 @@
-import TTFGlyph from './TTFGlyph';
-import BBox from './BBox';
+import TTFGlyph from './TTFGlyph.js';
+import BBox from './BBox.js';
 
 /**
  * Represents a TrueType glyph in the WOFF2 format, which compresses glyphs differently.

@@ -1,19 +1,19 @@
 import * as r from 'restructure';
-import { cache } from './cache';
-import { logErrors, defaultLanguage } from './core';
-import Directory from './tables/directory';
-import tables from './tables';
-import CmapProcessor from './CmapProcessor';
-import LayoutEngine from './layout/LayoutEngine';
-import TTFGlyph from './glyph/TTFGlyph';
-import CFFGlyph from './glyph/CFFGlyph';
-import SBIXGlyph from './glyph/SBIXGlyph';
-import COLRGlyph from './glyph/COLRGlyph';
-import GlyphVariationProcessor from './glyph/GlyphVariationProcessor';
-import TTFSubset from './subset/TTFSubset';
-import CFFSubset from './subset/CFFSubset';
-import BBox from './glyph/BBox';
-import { asciiDecoder } from './utils';
+import { cache } from './cache.js';
+import { logErrors, defaultLanguage } from './core.js';
+import Directory from './tables/directory.js';
+import tables from './tables/index.js';
+import CmapProcessor from './CmapProcessor.js';
+import LayoutEngine from './layout/LayoutEngine.js';
+import TTFGlyph from './glyph/TTFGlyph.js';
+import CFFGlyph from './glyph/CFFGlyph.js';
+import SBIXGlyph from './glyph/SBIXGlyph.js';
+import COLRGlyph from './glyph/COLRGlyph.js';
+import GlyphVariationProcessor from './glyph/GlyphVariationProcessor.js';
+import TTFSubset from './subset/TTFSubset.js';
+import CFFSubset from './subset/CFFSubset.js';
+import BBox from './glyph/BBox.js';
+import { asciiDecoder } from './utils.js';
 
 function needsCodePoints(glyph, characters) {
   return glyph && glyph.codePoints.length === 0 && characters.length > 0;

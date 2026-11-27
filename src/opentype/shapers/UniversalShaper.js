@@ -1,11 +1,11 @@
-import { DefaultShaper } from './DefaultShaper';
+import { DefaultShaper } from './DefaultShaper.js';
 import { StateMachine } from 'dfa';
 import { UnicodeTrie } from 'unicode-trie';
-import GlyphInfo from '../GlyphInfo';
+import GlyphInfo from '../GlyphInfo.js';
 import useData from './generated/use.js';
 import useTrieBase64 from './generated/use.trie.base64.js';
 
-import { decodeBase64 } from '../../utils';
+import { decodeBase64 } from '../../utils.js';
 
 const { categories, decompositions } = useData;
 const trie = new UnicodeTrie(decodeBase64(useTrieBase64));

@@ -1,8 +1,8 @@
-import { TTFFont } from './TTFFont';
-import WOFFDirectory from './tables/WOFFDirectory';
+import { TTFFont } from './TTFFont.js';
+import WOFFDirectory from './tables/WOFFDirectory.js';
 import { inflateSync } from '#compression';
 import * as r from 'restructure';
-import { asciiDecoder } from './utils';
+import { asciiDecoder } from './utils.js';
 
 export class WOFFFont extends TTFFont {
   type = 'WOFF';

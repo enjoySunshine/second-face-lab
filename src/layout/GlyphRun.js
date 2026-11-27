@@ -1,5 +1,5 @@
-import BBox from '../glyph/BBox';
-import * as Script from '../layout/Script';
+import BBox from '../glyph/BBox.js';
+import * as Script from '../layout/Script.js';
 
 /**
  * Represents a run of Glyph and GlyphPosition objects.

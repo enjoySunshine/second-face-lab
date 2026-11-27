@@ -1,5 +1,5 @@
-import Glyph from './Glyph';
-import Path from './Path';
+import Glyph from './Glyph.js';
+import Path from './Path.js';
 
 /**
  * Represents an OpenType PostScript glyph, in the Compact Font Format.

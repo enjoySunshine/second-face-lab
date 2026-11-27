@@ -1,7 +1,7 @@
-import { cache } from '../cache';
-import Path from './Path';
+import { cache } from '../cache.js';
+import Path from './Path.js';
 import { isMark } from 'unicode-properties';
-import StandardNames from './StandardNames';
+import StandardNames from './StandardNames.js';
 
 /**
  * Glyph objects represent a glyph in the font. They have various properties for accessing metrics and
